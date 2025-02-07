@@ -3,8 +3,10 @@ interface User {
   firstName: string;
   lastName: string;
   role: "admin" | "user" | "super-admin";
-  posts: Post;
+  posts: Post[];
 }
+
+// Solution using generics: Array<Post>
 
 interface Post {
   id: number;

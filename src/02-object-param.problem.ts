@@ -1,6 +1,8 @@
 import { expect, it } from "vitest";
 
-export const addTwoNumbers = (params) => {
+type newType = {first: number; second: number}
+
+export const addTwoNumbers = (params: newType ) => {
   return params.first + params.second;
 };
 
@@ -19,3 +21,5 @@ it("Should add the two numbers together", () => {
     }),
   ).toEqual(30);
 });
+
+// The type technique used in the solution will provide a better description in case an error

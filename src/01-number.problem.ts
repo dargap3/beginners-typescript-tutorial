@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
 
-export const addTwoNumbers = (a, b) => {
+export const addTwoNumbers = (a: number, b: number) => {
   return a + b;
 };
 
@@ -8,3 +8,6 @@ it("Should add the two numbers together", () => {
   expect(addTwoNumbers(2, 4)).toEqual(6);
   expect(addTwoNumbers(10, 10)).toEqual(20);
 });
+
+// Parameter X implicity has and 'any' type concept
+// https://www.totaltypescript.com/concepts/parameter-x-implicitly-has-an-any-type
